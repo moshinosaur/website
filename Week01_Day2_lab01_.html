@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <header><h1>Student Registration System</h1></header>
+</head>
+<body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Courses</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <section>
+        <h2>Main Section</h2>
+        <p>This page demonstrates HTML elements learned in class.</p>
+        <form action="/submit.php"
+              method="POST"
+              enctype="multipart/form-data"
+              accept="TUF-8"
+              autocomplete="off"
+              name="studentForm"
+              target="_blank"
+              rel="noopener">
+
+              <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="username">Username:</label>
+                <input type="text" id="username"name="username"maxlength="20" placeholder="Enter username" title="username" required>
+                <br>><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter password" title="password" required>
+                <br>><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter email" title="email" required>
+                <br>><br>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter phone number" title="phone" required>
+                <br><br>
+
+                <label for="website">Website:</label>
+                <input type="url" id="website" name="website" placeholder="Enter website URL" title="website" required>
+                <br><br>
+
+                <label for="searchbox">Search:</label>
+                <input type="text" id="searchbox" name="searchbox" placeholder="Search..." title="searchbox">
+                <br><br>
+
+                <label for="age">Age: </label>
+                <input type="number" id="age" name="age" placeholder="Enter age" title="age" required>
+                <br><br>
+              
+                <label for="birthday">Birthday:</label>
+                <input type="date" id="birthday" name="birthday" title="birthday">
+                <br><br>
+
+                <label for="meeting">Meeting Time:</label>
+                <input type="time" id="meeting" name="meeting" title="meeting">
+                <br><br>
+
+                <label for="expiry">Expiry Date:</label>
+                <input type="month" id="expiry" name="expiry" title="expiry">
+                <br><br>
+
+                <label for="weeknumber">Week Number:</label>
+                <input type="week" id="weeknumber" name="weeknumber" title="weeknumber">
+                <br><br>    
+
+                <label for="favcolor">Favorite Color:</label>
+                <input type="color" id="favcolor" name="favcolor" title="favcolor">
+                <br><br>
+
+                <label>Gender</label>
+                <input type="radio" id="male" name="gender" value="male"title="select male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" title="select female">
+                <label for="female">Female</label>
+                <br><br>
+
+                <label >Hobbie: </label>
+                <input type="checkbox"id=reading name="hobbies" value="reading" title="select reading">
+                <label for="reading">Reading</label>
+                <input type="checkbox" id="traveling" name="hobbies" value="music"title="select music hobbby">
+                <label >Music</label>
+                <input type="checkbox"id="sports" name="hobbies" value="sports"title="select sports hobbby">
+                <label >Sports</label>
+                <br><br>
+                <!-- select option -->
+                <label for="course">Choose Course:</label>
+                <select id="course" name="course" title="course selection">
+                    <optgroup label="Programming">
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="javascript">JavaScript</option>
+                    </optgroup>
+                    <optgroup label="Design">   
+                        <option value="figma">Figma</option>
+                        <option value="ps">Photoshop</option>
+                    </optgroup>
+                </select>
+                <br><br>
+
+                <label for="city">Choose City:</label>
+                <input list="cities" id="city" name="city" placeholder="Select city" title="select city from list">
+                <datalist id="cities">
+                    <option value="Prey Veng">
+                    <option value="Phnom Penh">
+                    <option value="Siem Reap">
+                    <option value="Rotanak Kiri">
+                    <option value="Bonteay Meanchey">
+                </datalist>
+                <br><br>    
+
+                <!-- text area -->
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" placeholder="Enter your message" title="enter message"></textarea>
+                <br><br>
+
+                <!-- file upload -->
+                <label for="resume">Upload Resume:</label>
+                <input type="file" id="resume" name="resume" title="upload resume">
+                <br><br>
+
+                <label for="student_id">Student ID:</label>
+                <input type="text" id="student_id" name="student_id" placeholder="Enter student ID" title="enter student ID">
+                <br><br>
+
+                <label for="promo">Promo Code:</label>
+                <input type="text" id="promo" name="promo" placeholder="Enter promo code" title="enter promo code">
+                <br><br>
+
+                <label for="result">Calculate Result:</label>
+                <output id="result" name="result"  >0</output>
+                <br><br>
+
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+                <input type="button" value="Click me">
+                <input type="submit"value="Submit">
+
+
+             </fieldset>
+            </form>
+
+            <details>Click to view instructions</details>
+            <p>plz double-check all required fields before submission</p>
+
+            
+    </section>
+
+    
+    <article>
+        <h3>About This Lab</h3>
+        <p>This is a self-contained article section.</p>
+    </article>
+    <aside>
+        <h4>Note</h4>
+        <p>Please complete all required fields.</p>
+    </aside>
+        <canvas id="myCanvas" width="200" height="100"style="border:1px solid black;"   ></canvas>
+        
+        <svg width="100" height="100">
+                <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+        </svg>
+    <footer>
+        <p>© 2026 HTML Practice Lab</p>
+    </footer>
+    
+</body>
+</html>

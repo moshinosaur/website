@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h2 class="logo">Khemrak</h2>
+        <nav aria-label="Main Nav">
+            <ul class="nav=list">
+                <li ><a href="#home" class="nav-link">home </a></li>
+                <li ><a href="#about" class="nav-link">about</a></li>
+                <li><a href="#skill" class="nav-link">skill</a></li>
+                <li><a href="#con" class="nav-link">Contact</a></li>
+            
+            </ul>
+        </nav>
+    </header>
+
+    <!-- mail -->
+     <main>
+        <!-- home -->
+        <section id="home" class="home" aria-labelledby="hero-title">
+            <h3>Home</h3>
+            <p>talking about information</p>
+
+        </section>
+
+        <!-- about -->
+         <section id="about" class="about" aria-labelledby="about-title">
+            <h3>About</h3>
+            <p>my name khemrak i'm a y3 student at rupp</p>
+         </section>
+
+         <!-- skill -->
+          <section id="skill" class="skill" aria-labelledby="skill-title">
+            <h3>Skill</h3>
+            <p>i'm good at programer like: Java, C/C++, C# etc.</p>
+            
+
+          </section>
+
+          <!-- contact -->
+          <section id="con" class="con" aria-labelledby="contact-title">
+            <h3>Contact</h3>
+            <section id="con" class="con" aria-labelledby="contact-title">
+                <form action="/api/contact" method="post" novalidate  aria-describedby="form-instruction">
+                    <p id="form-instruction" class="sr-only">All fields are required unless marked optional.</p>
+                    <!-- name -->
+                    <div class="form-group">
+                    <label for="fullName">Full Name <span class="required">*</span></label>
+                    <input 
+                            type="text" 
+                            id="fullName" 
+                            name="fullName" 
+                            required 
+                            placeholder="Emter your full-name"
+                            maxlength="50"
+                            aria-describedby="name-help">
+                        <small id="name-help" class="form-help">Enter your full name (max 50 characters)</small>
+                    </div>
+                    <!-- email -->
+                    <div class="form-group">
+                    <label for="email">Emial <span class="required">*</span></label>
+                    <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                             required 
+                            placeholder="Emter your email"
+                            maxlength="50"
+                            aria-describedby="name-help">
+                        <small id="name-help" class="form-help">We'll never share your email</small>
+                    </div>
+                    <!-- botton -->
+                     <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Send Message </button>
+                        <button type="reset" class="btn btn-secondary">Clear Form</button>
+                    </div>
+                </form>
+
+                </section>
+
+           </section>
+
+
+     </main>
+
+     <!-- footer -->
+       <footer class="footer">
+            <p>&copy; 2026 Kheng Khemrak. Phnom Penh, Cambodia.</p>
+            <ul class="social-links">
+                <li><a href="https://github.com/moshinosaur" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <li><a href="khemrakcc@gmail.com">Email</a></li>
+    </ul>
+       </footer>
+</body>
+</html>
