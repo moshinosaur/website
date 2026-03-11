@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* p{
+    color: red;
+} */
+.testh{
+    color: blue;
+    
+}
+#title{
+    font-size: 20px;
+}
+h1,h2,h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+div p{
+    color: green;
+}
+.div_p>p{
+    color: red;
+}
+h1~p{
+    color: purple;
+}
+[disabled]{
+    background-color: gray;
+
+}
+input[type="password"]{
+    border: 2px solid blue;
+}
+[class~="btn"]{
+    background-color: green;
+    color: white;
+}
+.langTest [lang|="en"]{
+    color: black;
+}
+a[href^="https"]{
+    color: green;
+}
+.firstchild p:first-child{
+    color: red;
+}
+li:nth-child(2){
+
+    color: skyblue
+}
+.testUnderline{
+    text-decoration: underline;
+    text-transform: uppercase;
+}
