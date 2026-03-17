@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h2 class="logo">Kheng Khemrak</h2>
+        <nav aria-label="Main Nav">
+            <ul class="nav-list">
+                <li ><a href="#home" class="nav-link">Home </a></li>
+                <li ><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skill" class="nav-link">Skill</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            
+            </ul>
+        </nav>
+    </header>
+
+    <!-- mail -->
+     <main>
+        <!-- home -->
+        <section id="home" class="home" aria-labelledby="hero-title">
+            <img src="MyPic.jpg" alt="My Picture"width="300" height="300" loading="lazy">
+            <div class="text">
+                <h3 class="title">Fullstack Developer</h3>
+                <p class="subtitle">Building responsive web applications with React and Laravel</p>
+                
+            </div>
+            
+
+        </section>
+
+        <!-- about -->
+         <section id="about" class="about" aria-labelledby="about-title">
+            <div class="text">
+                <h3 class="title">About me</h3>
+            <p class="subtitle">My name is Kheng Khemrak, and I am currently a third-year student at the Royal University of Phnom Penh (RUPP). 
+            I have a strong interest in software development and programming. Throughout my studies, I have been learning 
+            and practicing various programming languages such as Java, C, C++, and C#. I enjoy building small applications 
+            and projects that help me improve my problem-solving skills and deepen my understanding of how software systems work. 
+            I am passionate about continuously learning new technologies and developing my technical skills to become a 
+            professional software developer in the future.
+            </p>
+            </div>
+            
+         </section>
+
+         <!-- skill -->
+          <section id="skill" class="skill" aria-labelledby="skill-title">
+            <h3 class="skill-title">Skill</h3>
+            <ul class="skill-list">
+                <li>Java</li>
+                <li>C</li>
+                <li>C++</li>
+                <li>C#</li>
+                <li>Database</li>
+            </ul>
+            
+
+          </section>
+
+          <!-- contact -->
+          <section id="con" class="con" aria-labelledby="contact-title">
+            <h3>Contact</h3>
+            <section id="con" class="con" aria-labelledby="contact-title">
+                <form action="/api/contact" method="post" novalidate  aria-describedby="form-instruction">
+                    <p id="form-instruction" class="sr-only">All fields are required unless marked optional.</p>
+                    <!-- name -->
+                    <div class="form-group">
+                    <label for="fullName">Full Name <span class="required">*</span></label>
+                    <input 
+                            type="text" 
+                            id="fullName" 
+                            name="fullName" 
+                            required 
+                            placeholder="Emter your full-name"
+                            maxlength="50"
+                            aria-describedby="name-help">
+                        <small id="name-help" class="form-help">Enter your full name (max 50 characters)</small>
+                    </div>
+                    <!-- email -->
+                    <div class="form-group">
+                    <label for="email">Emial <span class="required">*</span></label>
+                    <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            required 
+                            placeholder="Emter your email"
+                            maxlength="50"
+                            aria-describedby="name-help">
+                        <small id="name-help" class="form-help">We'll never share your email</small>
+                    </div>
+                    <!-- message -->
+                     <div class="message">
+                        <label for="message">Message </label>
+                        <textarea 
+                                id="message" 
+                                name="message" 
+                                required 
+                                placeholder="Enter your message here"
+                                maxlength="500"
+                                aria-describedby="message-help"></textarea>
+
+                     </div>
+                    <!-- botton -->
+                     <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Send Message </button>
+                        <button type="reset" class="btn btn-secondary">Clear Form</button>
+                    </div>
+                </form>
+
+                </section>
+
+           </section>
+
+
+     </main>
+
+     <!-- footer -->
+       <footer class="footer">
+            <p>&copy; 2026 Kheng Khemrak. Phnom Penh, Cambodia.</p>
+            <ul class="social-links">
+                <li><a href="https://github.com/moshinosaur" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <li><a href="khemrakcc@gmail.com">Email</a></li>
+    </ul>
+       </footer>
+</body>
+</html>
